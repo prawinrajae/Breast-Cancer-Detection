@@ -6,6 +6,8 @@ import pandas as pd
 
 # Importing the dataset
 dataset = pd.read_csv('/Users/prawinrajae/Downloads/Data.csv')
+dataset.info()
+dataset.head()
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, -1].values
 
